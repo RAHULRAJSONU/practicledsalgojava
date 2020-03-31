@@ -1,5 +1,9 @@
 package com.silvertech.dsalgo.ds.binarysearchtree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 import java.util.Stack;
 
 /*
@@ -181,6 +185,31 @@ public class BST {
       successor.right = node.right;
     }
     return successor;
+  }
+
+  public List<List<Integer>> traverseByLevelOrder(){
+    List<List<Integer>> result = new ArrayList<>();
+    if(root == null){
+      return result;
+    }
+    Queue<Node> queue = new LinkedList<>();
+    queue.add(root);
+    while (!queue.isEmpty()){
+      int size = queue.size();
+      List<Integer> currentLevel = new ArrayList<>();
+      for (int m =0; m<size; m++) {
+        Node current = queue.remove();
+        currentLevel.add(current.key);
+        if (null != current.left) {
+          queue.add(current.left);
+        }
+        if (null != current.right) {
+          queue.add(current.right);
+        }
+      }
+      result.add(currentLevel);
+    }
+    return result;
   }
 
   public void displayTree() {
