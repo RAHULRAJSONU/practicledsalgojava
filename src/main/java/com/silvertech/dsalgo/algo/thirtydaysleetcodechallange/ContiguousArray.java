@@ -1,4 +1,4 @@
-package com.silvertech.dsalgo.algo.array;
+package com.silvertech.dsalgo.algo.thirtydaysleetcodechallange;
 
 import java.util.HashMap;
 import java.util.Map;

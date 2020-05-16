@@ -162,13 +162,5 @@ public class SinglyLinkedList {
       current = current.next;
     }
   }
-  // Node Definition
-  class Node{
-    int data;
-    Node next;
 
-    public Node(int data) {
-      this.data = data;
-    }
-  }
 }

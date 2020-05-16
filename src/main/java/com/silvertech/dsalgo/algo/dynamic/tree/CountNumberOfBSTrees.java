@@ -26,4 +26,19 @@ package com.silvertech.dsalgo.algo.dynamic.tree;
  */
 public class CountNumberOfBSTrees {
 
+  public static void main(String[] args) {
+    System.out.println(countNumberOfBSTrees(5));
+  }
+
+  private static int countNumberOfBSTrees(int n) {
+    int[] trees = new int[n+1];
+    trees[0]=1;
+    trees[1]=1;
+    for(int m=2; m<=n; m++){
+      for(int l=0; l < m; l++){
+        trees[m]=trees[m]+(trees[l]*trees[m-l-1]);
+      }
+    }
+    return trees[n];
+  }
 }

@@ -32,19 +32,7 @@ package com.silvertech.dsalgo.algo.array;
 * */
 public class ShiftZeroToEnd {
 
-  public static void main(String[] args) {
-    int[] arr = new int[]{0,0,1,5,0,1,2,0,3,0,4,1};
-    shiftZeroToEndAndOneToStart(arr);
-    for (int i : arr) {
-      System.out.print(i+",");
-    }
-  }
-
-  private static void shift(int[] arr){
-    shiftZeroToEnd(arr);
-  }
-
-  private static void shiftZeroToEndAndOneToStart(int[] arr){
+  public static void shiftZeroToEndAndOneToStart(int[] arr){
     shiftZeroToEnd(arr);
     shiftOneToStarting(arr);
   }

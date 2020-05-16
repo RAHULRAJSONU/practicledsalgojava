@@ -31,16 +31,16 @@ import java.util.Queue;
 public class TreeSerializationAndDeserialization {
 
   public static void main(String[] args) {
-    TreeNode node = new TreeNode(10);
-    node = insert(node,7);
-    node = insert(node,6);
+    TreeNode node = new TreeNode(4);
+    node = insert(node,2);
     node = insert(node,1);
-    node = insert(node,8);
-    node = insert(node,9);
-    node = insert(node,11);
-    node = insert(node,20);
-    node = insert(node,14);
-    node = insert(node,23);
+//    node = insert(node,1);
+//    node = insert(node,8);
+//    node = insert(node,9);
+//    node = insert(node,11);
+//    node = insert(node,20);
+//    node = insert(node,14);
+//    node = insert(node,23);
     String ser = serialize(node);
     System.out.println(ser);
     TreeNode tr = deSerialize(ser);

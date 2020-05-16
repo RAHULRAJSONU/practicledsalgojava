@@ -1,4 +1,4 @@
-package com.silvertech.dsalgo.algo.knapsack;
+package com.silvertech.dsalgo.algo.dynamic.knapsack;
 
 import static java.lang.Math.max;
 
