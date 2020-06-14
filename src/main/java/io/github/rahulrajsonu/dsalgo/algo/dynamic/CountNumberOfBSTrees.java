@@ -1,4 +1,4 @@
-package io.github.rahulrajsonu.dsalgo.algo.dynamic.tree;
+package io.github.rahulrajsonu.dsalgo.algo.dynamic;
 
 /*
  * practicledsalgojava

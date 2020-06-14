@@ -1,4 +1,4 @@
-package io.github.rahulrajsonu.dsalgo.algo.dynamic.knapsack;
+package io.github.rahulrajsonu.dsalgo.algo.dynamic;
 
 import static java.lang.Math.max;
 
